@@ -26,7 +26,7 @@
   },
 
   "network": {
-    "format-wifi": " {essid}",
+    "format-wifi": "  {essid}",
     "format-ethernet": " {ipaddr}",
     "format-disconnected": " Disconnected",
     "tooltip": true
@@ -65,10 +65,12 @@
   },
   "custom/reboot": {
     "format": "",
-    "on-click": "swaynag -m 'Reboot?' -B 'Yes' 'systemctl reboot'"
+    "on-click": "swaynag -m 'Reboot?' -B 'Yes' 'systemctl reboot'",
+    "tooltip": false
   },
   "custom/poweroff": {
     "format": "",
-    "on-click": "swaynag -m 'Shutdown?' -B 'Yes' 'systemctl poweroff'"
+    "on-click": "swaynag -m 'Shutdown?' -B 'Yes' 'systemctl poweroff'",
+    "tooltip": false
   }
 }
