@@ -1,0 +1,73 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "network",
+    "battery",
+    "bluetooth",
+    "pulseaudio",
+    "memory",
+    "cpu",
+    "custom/reboot",
+    "custom/poweroff"
+  ],
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{name}"
+  },
+
+  "clock": {
+    "format": "{:%H:%M  %a  %d.%m.%Y}",
+    "tooltip": true
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": " {ipaddr}",
+    "format-disconnected": " Disconnected",
+    "tooltip": true
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "tooltip": true
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "tooltip": true
+  },
+
+  "memory": {
+    "interval": 10,
+    "format": "󰘚 {used}G/{total}G"
+  },
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}% | Temp: {temp}°C"
+  },
+  "custom/reboot": {
+    "format": "",
+    "on-click": "systemctl reboot"
+  },
+  "custom/poweroff": {
+    "format": "",
+    "on-click": "systemctl poweroff"
+  }
+}
