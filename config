@@ -65,10 +65,10 @@
   },
   "custom/reboot": {
     "format": "",
-    "on-click": "systemctl reboot"
+    "on-click": "swaynag -m 'Reboot?' -B 'Yes' 'systemctl reboot'"
   },
   "custom/poweroff": {
     "format": "",
-    "on-click": "systemctl poweroff"
+    "on-click": "swaynag -m 'Shutdown?' -B 'Yes' 'systemctl poweroff'"
   }
 }
