@@ -41,7 +41,8 @@
   "bluetooth": {
     "format": " {status}",
     "format-connected": " {device_alias}",
-    "tooltip": true
+    "tooltip": true,
+    "on-click": "blueman-manager"
   },
 
   "pulseaudio": {
